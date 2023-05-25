@@ -40,3 +40,8 @@ Understand the difference of **tx.origin** and **msg.sender**
 * Why? so a deployed contract will be *msg.sender* 
 * *tx.origin* will be the same address you are using on Ethernaut and the deployer of the contract (Deployer must be the owner to clear the level)
 * Submit instance once owner == player address
+
+5. Token
+Understand  **uint overflow**. No reverts occuring in older versions, Solidity 0.6.0 and below iirc
+* Get max amount of tokens be deducting 1 (-1) when token balance is at 0
+* Submit instance. Done
